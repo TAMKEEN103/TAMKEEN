@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tamkeen Financial & Management Consulting</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1a73e8, #003c8f);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header img {
+      margin-top: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      max-width: 250px;
+      height: auto;
+    }
+
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      padding: 14px 25px;
+      text-decoration: none;
+      transition: 0.3s ease;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+      color: #000;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section h2 {
+      color: #1a73e8;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #1a73e8;
+      padding-bottom: 5px;
+    }
+
+    .service-item {
+      background-color: #fff;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: relative;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 100%;
+        max-width: 250px;
+      }
+
+      nav {
+        flex-direction: column;
+      }
+
+      nav a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 id="company-name">Tamkeen Financial & Management Consulting</h1>
+    <p id="company-description">Empowering Businesses with Expertise in Financial and Management Solutions</p>
+    <img src="LM.jpg" alt="Tamkeen Logo" />
+  </header>
+
+  <nav>
+    <a href="#intro" id="home-link">Home</a>
+    <a href="#services" id="services-link">Services</a>
+    <a href="#contact" id="contact-link">Contact</a>
+    <a href="#" id="language-toggle" onclick="toggleLanguage()">Arabic-عربي</a>
+  </nav>
+
+  <div class="container">
+    <section id="intro" class="intro">
+      <h2 id="welcome-heading">Welcome to Tamkeen</h2>
+      <p id="intro-text">
+        At Tamkeen, we specialize in providing top-notch financial and management consulting services. Our experienced consultants are here to help you optimize your business operations, manage your finances more effectively, and achieve sustainable growth.
+      </p>
+    </section>
+
+    <section id="services" class="services">
+      <h2 id="services-heading">Our Services</h2>
+      <div class="service-item">
+        <h3 id="service-financial-planning">Financial Planning</h3>
+        <p id="service-financial-description">We assist businesses in developing comprehensive financial strategies that align with their goals. From budgeting to investment planning, we provide the expertise you need to navigate the complexities of finance.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="service-business-strategy">Business Strategy</h3>
+        <p id="service-business-description">Our business consultants work with you to develop strategies that drive long-term success. We analyze market trends, competition, and internal processes to ensure your business remains competitive and efficient.</p>
+      </div>
+      <div class="service-item">
+        <h3 id="service-risk-management">Risk Management</h3>
+        <p id="service-risk-description">We help you identify potential risks to your business and provide strategies to mitigate them, ensuring the longevity and sustainability of your operations in uncertain times.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+    <img src="LR.jpg" alt="qrcode" height = "125" weidth = "120"/>
+  </div>
+
+  <footer>
+    &copy; 2025 Tamkeen Financial & Management Consulting. All rights reserved.
+  </footer>
+
+  <script>
+    let isEnglish = true;
+
+    function toggleLanguage() {
+      if (isEnglish) {
+        document.getElementById("company-name").innerText = "تمكين للاستشارات المالية والإدارية";
+        document.getElementById("company-description").innerText = "تمكين الأعمال من خلال الخبرة في الحلول المالية والإدارية";
+        document.getElementById("home-link").innerText = "الرئيسية";
+        document.getElementById("services-link").innerText = "الخدمات";
+        document.getElementById("contact-link").innerText = "اتصل بنا";
+        document.getElementById("language-toggle").innerText = "English-إنجليزي";
+        document.getElementById("welcome-heading").innerText = "مرحبًا بكم في تمكين";
+        document.getElementById("intro-text").innerText = "في تمكين، نحن متخصصون في تقديم خدمات الاستشارات المالية والإدارية ذات المستوى العالي...";
+        document.getElementById("services-heading").innerText = "خدماتنا";
+        document.getElementById("service-financial-planning").innerText = "التخطيط المالي";
+        document.getElementById("service-financial-description").innerText = "نساعد الشركات في تطوير استراتيجيات مالية شاملة تتماشى مع أهدافها...";
+        document.getElementById("service-business-strategy").innerText = "استراتيجية الأعمال";
+        document.getElementById("service-business-description").innerText = "يعمل مستشارونا معك لتطوير استراتيجيات تحقق النجاح على المدى الطويل...";
+        document.getElementById("service-risk-management").innerText = "إدارة المخاطر";
+        document.getElementById("service-risk-description").innerText = "نساعدك في تحديد المخاطر المحتملة التي قد تواجهها عملك...";
+        document.getElementById("contact-heading").innerText = "اتصل بنا";
+        document.getElementById("contact-text").innerText = "هل أنت مستعد لأخذ عملك إلى المستوى التالي؟ تواصل معنا الآن!";
+        document.getElementById("contact-email").innerHTML = 'البريد الإلكتروني: <a href="mailto:info@h66294232@gmail.com">info@h66294232@gmail.com</a>';
+      } else {
+        document.getElementById("company-name").innerText = "Tamkeen Financial & Management Consulting";
+        document.getElementById("company-description").innerText = "Empowering Businesses with Expertise in Financial and Management Solutions";
+        document.getElementById("home-link").innerText = "Home";
+        document.getElementById("services-link").innerText = "Services";
+        document.getElementById("contact-link").innerText = "Contact";
+        document.getElementById("language-toggle").innerText = "Arabic-عربي";
+        document.getElementById("welcome-heading").innerText = "Welcome to Tamkeen";
+        document.getElementById("intro-text").innerText = "At Tamkeen, we specialize in providing top-notch financial and management consulting services...";
+        document.getElementById("services-heading").innerText = "Our Services";
+        document.getElementById("service-financial-planning").innerText = "Financial Planning";
+        document.getElementById("service-financial-description").innerText = "We assist businesses in developing comprehensive financial strategies...";
+        document.getElementById("service-business-strategy").innerText = "Business Strategy";
+        document.getElementById("service-business-description").innerText = "Our business consultants work with you to develop strategies...";
+        document.getElementById("service-risk-management").innerText = "Risk Management";
+        document.getElementById("service-risk-description").innerText = "We help you identify potential risks to your business...";
+        document.getElementById("contact-heading").innerText = "Contact Us";
+        document.getElementById("contact-text").innerText = "Ready to take your business to the next level? Reach out to our team today!";
+        document.getElementById("contact-email").innerHTML = 'Email: <a href="mailto:info@h66294232@gmail.com">info@h66294232@gmail.com</a>';
+      }
+      isEnglish = !isEnglish;
+    }
+  </script>
+
+</body>
+</html>
