@@ -5,6 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tamkeen Financial & Management Consulting</title>
   <style>
+    /* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button Style */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 14px 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Dropdown Content Hidden by Default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2c3e50;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+/* Dropdown Content Links */
+.dropdown-content a {
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: #000;
+}
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
@@ -114,7 +166,12 @@
     <a href="#services" id="services-link">Services</a>
     <a href="#contact" id="contact-link">Contact</a>
     <a href="#" id="language-toggle" onclick="toggleLanguage()">Arabic-عربي</a>
-    <a href="Services.html" class="button">خدمات</a>
+    <button class="dropbtn">الخدمات ▼</button>
+      <div class="dropdown-content">
+        <a href="Services2.html" class="button">خدمات</a>
+        <a href="Services1.html" class="button">خدمات</a>
+        <a href="Services.html" class="button">خدمات</a>
+
   </nav>
 
   <div class="container">
