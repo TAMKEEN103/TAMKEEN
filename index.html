@@ -14,39 +14,6 @@
 
   gtag('config', 'G-49L8XX952H');
 
-  <!-- زر المحادثة -->
-<button id="chatButton" onclick="Tawk_API.maximize()" style="position:fixed;bottom:20px;right:20px;z-index:9999;background-color:#be1622;color:#fff;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;font-family:inherit;">
-    💬
-</button>
-
-<!-- سكربت Tawk.to -->
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/67f529b68d990d1909bf021d/1ioaqlt4h';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-
-    // عند تحميل Tawk.to، اضبط اللغة حسب لغة الصفحة
-    Tawk_API.onLoad = function () {
-        const lang = document.documentElement.lang || 'en'; // جلب اللغة من <html lang="...">
-        if (lang.startsWith('ar')) {
-            Tawk_API.setAttributes({ 'language': 'ar' }, function (error) {});
-            document.getElementById("chatButton").innerHTML = "💬 تحدث معنا";
-        } else {
-            Tawk_API.setAttributes({ 'language': 'en' }, function (error) {});
-            document.getElementById("chatButton").innerHTML = "💬 Chat with us";
-        }
-    };
-</script>
-
-  
-
 </script>
   
   <style>
