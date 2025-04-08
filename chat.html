@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج الاتصال - Tamkeen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            box-sizing: border-box;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .form-container button {
+            background-color: #be1622;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        .form-container button:hover {
+            background-color: #9e141c;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>اتصل بنا</h2>
+        <form action="https://formsubmit.co/tamkeen103@gmail.com" method="POST">
+            <!-- لإيقاف السبام -->
+            <input type="hidden" name="_captcha" value="false">
+
+            <input type="text" name="name" placeholder="الاسم" required>
+
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+
+            <textarea name="message" placeholder="اكتب رسالتك هنا" required></textarea>
+
+            <button type="submit">📧 إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
