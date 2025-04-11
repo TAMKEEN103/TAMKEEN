@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -232,52 +233,54 @@
     <img src="LM.jpg" alt="Tamkeen Logo" />
   </header>
 
-  <nav>
-    <a href="chat.html" class="button">تواصل معنا</a>
-    <a href="#intro" id="home-link">Home</a>
-    <a href="#services" id="services-link">Services</a>
-    <a href="#contact" id="contact-link">Contact</a>
-    <a href="#" id="language-toggle" onclick="toggleLanguage()">Arabic-عربي</a>
-    <div class="dropdown">
-      <button class="dropbtn">الخدمات ▼</button>
-      <div class="dropdown-content">
-        <a href="Services2.html" class="button">خدمات مالية</a>
-        <a href="Services1.html" class="button">خدمات ادارية</a>
-        <a href="Services.html" class="button">خدمات عامة</a>
-  </div>
-</div>
+    <nav>
+      <a href="#intro" id="home-link">Home</a>
+      <a href="#services" id="services-link">Services</a>
+      <a href="#contact" id="contact-link">Contact</a>
 
+      <div class="dropdown">
+        <button class="dropbtn">الخدمات ▼</button>
+        <div class="dropdown-content">
+          <a href="Services2.html">خدمات مالية</a>
+          <a href="Services1.html">خدمات ادارية</a>
+          <a href="Services.html">خدمات عامة</a>
+        </div>
+      </div>
 
-  </nav>
+      <a href="#" id="language-toggle" onclick="toggleLanguage()">Arabic-عربي</a>
+      <a href="chat.html" class="try-btn">للتواصل الان - contact</a>
+    </nav>
+  </header>
 
   <div class="container">
-    <section id="intro" class="intro">
+    <section id="intro">
       <h2 id="welcome-heading">Welcome to Tamkeen</h2>
       <p id="intro-text">
         At Tamkeen, we specialize in providing top-notch financial and management consulting services. Our experienced consultants are here to help you optimize your business operations, manage your finances more effectively, and achieve sustainable growth.
       </p>
     </section>
 
-    <section id="services" class="services">
+    <section id="services">
       <h2 id="services-heading">Our Services</h2>
       <div class="service-item">
         <h3 id="service-financial-planning">Financial Planning</h3>
-        <p id="service-financial-description">We assist businesses in developing comprehensive financial strategies that align with their goals. From budgeting to investment planning, we provide the expertise you need to navigate the complexities of finance.</p>
+        <p id="service-financial-description">We assist businesses in developing comprehensive financial strategies that align with their goals. From budgeting to investment planning, we provide the expertise you need to navigate the complexities of finance..</p>
       </div>
       <div class="service-item">
         <h3 id="service-business-strategy">Business Strategy</h3>
-        <p id="service-business-description">Our business consultants work with you to develop strategies that drive long-term success. We analyze market trends, competition, and internal processes to ensure your business remains competitive and efficient.</p>
+        <p id="service-business-description">Our business consultants work with you to develop strategies that drive long-term success. We analyze market trends, competition, and internal processes to ensure your business remains competitive and efficient.."</p>
       </div>
       <div class="service-item">
         <h3 id="service-risk-management">Risk Management</h3>
-        <p id="service-risk-description">We help you identify potential risks to your business and provide strategies to mitigate them, ensuring the longevity and sustainability of your operations in uncertain times.</p>
+        <p id="service-risk-description">We help you identify potential risks to your business and provide strategies to mitigate them, ensuring the longevity and sustainability of your operations in uncertain times..</p>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-    <h2 id="contact-heading">Contact Us</h2>
-    <p id="contact-text">Ready to take your business to the next level? Reach out to our team today!</p>
-    <img src="qrcode.png" alt="qrcode" height = "125" weidth = "120"/>
+    <section id="contact">
+      <h2 id="contact-heading">Contact Us</h2>
+      <p id="contact-text">Ready to take your business to the next level? Reach out to our team today!</p>
+      <img src="qrcode.png" alt="qrcode" height="125" width="120" />
+    </section>
   </div>
 
   <footer>
@@ -289,13 +292,10 @@
 
     function toggleLanguage() {
       if (isEnglish) {
-        document.getElementById("company-name").innerText = "تمكين للاستشارات المالية والإدارية";
-        document.getElementById("company-description").innerText = "تمكين الأعمال من خلال الخبرة في الحلول المالية والإدارية";
         document.getElementById("home-link").innerText = "الرئيسية";
         document.getElementById("services-link").innerText = "الخدمات";
         document.getElementById("contact-link").innerText = "اتصل بنا";
         document.getElementById("language-toggle").innerText = "English-إنجليزي";
-        document.getElementById("aboutmore-link").innerText = "للمزيد";
         document.getElementById("welcome-heading").innerText = "مرحبًا بكم في تمكين";
         document.getElementById("intro-text").innerText = "في تمكين، نتخصص في تقديم خدمات استشارية مالية وإدارية عالية الجودة. مستشارونا ذوو الخبرة على أهبة الاستعداد لمساعدتكم على تحسين عملياتكم التجارية، وإدارة أموالكم بفعالية أكبر، وتحقيق نمو مستدام...";
         document.getElementById("services-heading").innerText = "خدماتنا";
@@ -304,34 +304,28 @@
         document.getElementById("service-business-strategy").innerText = "استراتيجية الأعمال";
         document.getElementById("service-business-description").innerText = "نساعد الشركات على وضع استراتيجيات مالية شاملة تتوافق مع أهدافها. بدءًا من وضع الميزانيات ووصولًا إلى تخطيط الاستثمارات، نوفر لك الخبرة اللازمة للتعامل مع تعقيدات الشؤون المالية...";
         document.getElementById("service-risk-management").innerText = "إدارة المخاطر";
-        document.getElementById("service-risk-description").innerText = "نحن نساعدك على تحديد المخاطر المحتملة التي قد تواجه عملك ونقدم لك استراتيجيات للتخفيف منها، وضمان طول عمر عملياتك واستدامتها في الأوقات غير المؤكدة...";
+        document.getElementById("service-risk-description").innerText = "نساعد الشركات على وضع استراتيجيات مالية شاملة تتوافق مع أهدافها. بدءًا من وضع الميزانيات ووصولًا إلى تخطيط الاستثمارات، نوفر لك الخبرة اللازمة للتعامل مع تعقيدات الشؤون المالية...";
         document.getElementById("contact-heading").innerText = "اتصل بنا";
         document.getElementById("contact-text").innerText = "هل أنت مستعد لأخذ عملك إلى المستوى التالي؟ تواصل معنا الآن!";
-        document.getElementById("contact-email").innerHTML = 'البريد الإلكتروني: <a href="mailto:info@h66294232@gmail.com">info@h66294232@gmail.com</a>';
       } else {
-        document.getElementById("company-name").innerText = "Tamkeen Financial & Management Consulting";
-        document.getElementById("company-description").innerText = "Empowering Businesses with Expertise in Financial and Management Solutions";
         document.getElementById("home-link").innerText = "Home";
         document.getElementById("services-link").innerText = "Services";
         document.getElementById("contact-link").innerText = "Contact";
         document.getElementById("language-toggle").innerText = "Arabic-عربي";
         document.getElementById("welcome-heading").innerText = "Welcome to Tamkeen";
-        document.getElementById("intro-text").innerText = "At Tamkeen, we specialize in providing top-notch financial and management consulting services...";
+        document.getElementById("intro-text").innerText = "At Tamkeen, we specialize in providing top-notch financial and management consulting services. Our experienced consultants are here to help you optimize your business operations, manage your finances more effectively, and achieve sustainable growth..";
         document.getElementById("services-heading").innerText = "Our Services";
         document.getElementById("service-financial-planning").innerText = "Financial Planning";
-        document.getElementById("service-financial-description").innerText = "We assist businesses in developing comprehensive financial strategies...";
-        document.getElementById("service-business-strategy").innerText = "Business Strategy";
-        document.getElementById("service-business-description").innerText = "Our business consultants work with you to develop strategies...";
+        document.getElementById("service-financial-description").innerText = "We assist businesses in developing comprehensive financial strategies that align with their goals. From budgeting to investment planning, we provide the expertise you need to navigate the complexities of finance..";
+        document.getElementById("service-financial-planning").innerText = "Business Strategy";
+        document.getElementById("service-business-description").innerText = "Our business consultants work with you to develop strategies that drive long-term success. We analyze market trends, competition, and internal processes to ensure your business remains competitive and efficient.";
         document.getElementById("service-risk-management").innerText = "Risk Management";
-        document.getElementById("service-risk-description").innerText = "We help you identify potential risks to your business...";
+        document.getElementById("service-risk-description").innerText = "We help you identify potential risks to your business and provide strategies to mitigate them, ensuring the longevity and sustainability of your operations in uncertain times";
         document.getElementById("contact-heading").innerText = "Contact Us";
         document.getElementById("contact-text").innerText = "Ready to take your business to the next level? Reach out to our team today!";
-        document.getElementById("contact-email").innerHTML = 'Email: <a href="mailto:info@h66294232@gmail.com">info@h66294232@gmail.com</a>';
       }
       isEnglish = !isEnglish;
     }
-
-    
   </script>
 
 </body>
