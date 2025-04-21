@@ -5,221 +5,138 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tamkeen Financial & Management Consulting</title>
 
-
   <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="Tamkeen" />
-<link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Tamkeen" />
+  <link rel="manifest" href="site.webmanifest" />
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-49L8XX952H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-49L8XX952H');
-
-</script>
-  
   <style>
-  .golden-button {
-    background: linear-gradient(to right, black, #d4af37);
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-weight: bold;
-  }
-
-  .golden-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(218, 165, 32, 0.6);
-  }
-
-  /* النموذج */
-  #register form input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-  }
-
-  #register form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f4;
-      line-height: 1.6;
+    :root {
+      --gold: #d4af37;
+      --dark: #111;
+      --light: #f5f5f5;
     }
-    
-/* Dropdown Button Style (متشابه مع بقية الأزرار) */
-.dropdown .dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 15px 25px; /* نفس التباعد كما في الأزرار الأخرى */
-  font-size: 20px; /* نفس حجم الخط كما في الأزرار الأخرى */
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-  text-align: center; /* لضمان أن النص في المنتصف */
-}
 
-/* Dropdown Content Links (متشابهة مع الأزرار الأخرى في التنقل) */
-.dropdown-content a {
-  color: white;
-  padding: 25px 35x; /* نفس التباعد كما في الأزرار الأخرى */
-  text-decoration: none;
-  display: block;
-  transition: 0.3s ease;
-  font-weight: bold;
-  font-size: 15px; /* نفس حجم الخط كما في الأزرار الأخرى */
-  text-align: center; /* لضمان أن النص في المنتصف */
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  color: #000;
-}
-
-
-/* Dropdown Container */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Button Style */
-.dropbtn {
-  background-color: transparent;
-  color: white;
-  padding: 14px 25px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-/* Dropdown Content Hidden by Default */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #2c3e50;
-  min-width: 220px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  border-radius: 8px;
-}
-
-/* Dropdown Content Links */
-.dropdown-content a {
-  color: white;
-  padding: 12px 20px;
-  text-decoration: none;
-  display: block;
-  transition: 0.3s ease;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-  color: #000;
-}
-
-/* Show Dropdown on Hover */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #ddd;
-  color: #000;
-}
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light);
+      color: #333;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(90deg, #D4AF37, #000);
+      background: linear-gradient(120deg, var(--gold), black);
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      animation: fadeInUp 1s ease-in-out;
     }
 
     header img {
-      margin-top: 15px;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      max-width: 250px;
-      height: auto;
+      margin-top: 25px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      max-width: 220px;
+      animation: zoomIn 1s ease-in-out;
     }
 
     nav {
-      background-color: #222;
+      background-color: var(--dark);
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
     }
 
-    nav a {
+    nav a, .dropbtn {
       color: white;
-      padding: 14px 25px;
+      padding: 14px 22px;
       text-decoration: none;
-      transition: 0.3s ease;
       font-weight: bold;
+      font-size: 16px;
+      transition: 0.3s ease;
     }
 
-        nav {
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a:hover {
-      background-color: #ddd;
+    nav a:hover, .dropdown:hover .dropbtn {
+      background-color: var(--gold);
       color: #000;
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #222;
+      min-width: 180px;
+      z-index: 99;
+      border-radius: 10px;
+    }
+
+    .dropdown-content a {
+      padding: 12px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .dropdown-content a:hover {
+      background-color: var(--gold);
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     .container {
       max-width: 1100px;
-      margin: auto;
+      margin: 40px auto;
       padding: 20px;
     }
 
     section h2 {
-      color: #FFD700;
-      margin-bottom: 10px;
-      border-bottom: 2px solid #FFD700;
-      padding-bottom: 5px;
+      color: var(--gold);
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
     }
 
     .service-item {
-      background-color: #fff;
+      background: white;
       padding: 25px;
-      margin: 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
 
@@ -227,19 +144,56 @@
       transform: translateY(-5px);
     }
 
+    #contact img {
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
     footer {
-      background-color: #222;
+      background: var(--dark);
       color: white;
       text-align: center;
-      padding: 15px;
-      position: relative;
-      margin-top: 40px;
+      padding: 20px;
+    }
+
+    /* WhatsApp Floating Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 18px;
+      font-size: 22px;
+      z-index: 999;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.7); }
+      to { opacity: 1; transform: scale(1); }
     }
 
     @media (max-width: 768px) {
-      header img {
-        width: 100%;
-        max-width: 250px;
+      header h1 {
+        font-size: 1.8rem;
       }
 
       nav {
@@ -247,79 +201,78 @@
       }
 
       nav a {
-        padding: 10px;
-        text-align: center;
         width: 100%;
+        text-align: center;
       }
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <h1 id="company-name">Tamkeen Financial & Management Consulting</h1>
-    <p id="company-description">Empowering Businesses with Expertise in Financial and Management Solutions</p>
-    <img src="LM.jpg" alt="Tamkeen Logo" />
-
-
-
+    <h1>Tamkeen Financial & Management Consulting</h1>
+    <p>Empowering Businesses with Financial & Strategic Excellence</p>
+    <img src="LM.jpg" alt="Tamkeen Logo">
   </header>
 
-    <nav>
-      <a href="#intro" id="home-link">Home</a>
-      <a href="#services" id="services-link">Services</a>
-      <a href="#contact" id="contact-link">Contact</a>
-
-      <div class="dropdown">
-        <button class="dropbtn">الخدمات ▼</button>
-        <div class="dropdown-content">
-          <a href="Services2.html">خدمات مالية</a>
-          <a href="Services1.html">خدمات ادارية</a>
-          <a href="Services.html">خدمات عامة</a>
-        </div>
-      </div>
-
-      <a href="#" id="language-toggle" onclick="toggleLanguage()">Arabic-عربي</a>
-      <a href="chat.html" class="try-btn">للتواصل الان - contact</a>
-    </nav>
-  </header>
-
-  <div class="container">
-    <section id="intro">
-      <h2 id="welcome-heading">Welcome to Tamkeen</h2>
-      <p id="intro-text">
-        At Tamkeen, we specialize in providing top-notch financial and management consulting services. Our experienced consultants are here to help you optimize your business operations, manage your finances more effectively, and achieve sustainable growth.
-      </p>
-    </section>
-
-    <section id="services">
-      <h2 id="services-heading">Our Services</h2>
-      <div class="service-item">
-        <h3 id="service-financial-planning">Financial Planning</h3>
-        <p id="service-financial-description">We assist businesses in developing comprehensive financial strategies that align with their goals. From budgeting to investment planning, we provide the expertise you need to navigate the complexities of finance..</p>
-      </div>
-      <div class="service-item">
-        <h3 id="service-business-strategy">Business Strategy</h3>
-        <p id="service-business-description">Our business consultants work with you to develop strategies that drive long-term success. We analyze market trends, competition, and internal processes to ensure your business remains competitive and efficient.."</p>
-      </div>
-      <div class="service-item">
-        <h3 id="service-risk-management">Risk Management</h3>
-        <p id="service-risk-description">We help you identify potential risks to your business and provide strategies to mitigate them, ensuring the longevity and sustainability of your operations in uncertain times..</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2 id="contact-heading">Contact Us</h2>
-      <p id="contact-text">Ready to take your business to the next level? Reach out to our team today!</p>
-      <img src="qrcode.png" alt="qrcode" height="125" width="120" />
-    </section>
+<nav>
+  <a href="#intro" id="home-link">Home</a>
+  <a href="#services" id="services-link">Services</a>
+  <a href="#contact" id="contact-link">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">الخدمات ▼</button>
+    <div class="dropdown-content">
+      <a href="Services2.html">خدمات مالية</a>
+      <a href="Services1.html">خدمات ادارية</a>
+      <a href="Services.html">خدمات عامة</a>
+    </div>
   </div>
+  <a href="#" id="language-toggle" onclick="toggleLanguage()">Arabic-عربي</a>
+  <a href="chat.html">Contact - تواصل معنا</a>
+</nav>
 
+<div class="container">
+  <section id="intro">
+    <h2 id="welcome-heading">Welcome to Tamkeen</h2>
+    <p id="intro-text">
+At Tamkeen, we specialize in providing top-notch financial and management consulting services. Our experienced consultants are here to help you optimize your business operations, manage your finances more effectively, and achieve sustainable growth..
+    </p>
+  </section>
+
+  <section id="services">
+    <h2 id="services-heading">Our Services</h2>
+
+    <div class="service-item">
+      <h3 id="service-financial-planning"><i class="fas fa-chart-line"></i> Financial Planning</h3>
+      <p id="service-financial-description">We assist businesses in developing comprehensive financial strategies that align with their goals. From budgeting to investment planning, we provide the expertise you need to navigate the complexities of finance..</p>
+    </div>
+
+    <div class="service-item">
+      <h3 id="service-business-strategy"><i class="fas fa-briefcase"></i> Business Strategy</h3>
+      <p id="service-business-description">Our business consultants work with you to develop strategies that drive long-term success. We analyze market trends, competition, and internal processes to ensure your business remains competitive and efficient..</p>
+    </div>
+
+    <div class="service-item">
+      <h3 id="service-risk-management"><i class="fas fa-shield-alt"></i> Risk Management</h3>
+      <p id="service-risk-description">We help you identify potential risks to your business and provide strategies to mitigate them, ensuring the longevity and sustainability of your operations in uncertain times..</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 id="contact-heading">Contact Us</h2>
+    <p id="contact-text">Ready to take your business to the next level? Reach out to our team today!</p>
+    <img src="qrcode.png" alt="WhatsApp QR" width="120" height="120">
+  </section>
+</div>
+
+ 
   <footer>
     &copy; 2025 Tamkeen Financial & Management Consulting. All rights reserved.
   </footer>
 
-  <script>
+
+ <script>
     let isEnglish = true;
 
     function toggleLanguage() {
@@ -332,9 +285,9 @@
         document.getElementById("intro-text").innerText = "في تمكين، نتخصص في تقديم خدمات استشارية مالية وإدارية عالية الجودة. مستشارونا ذوو الخبرة على أهبة الاستعداد لمساعدتكم على تحسين عملياتكم التجارية، وإدارة أموالكم بفعالية أكبر، وتحقيق نمو مستدام...";
         document.getElementById("services-heading").innerText = "خدماتنا";
         document.getElementById("service-financial-planning").innerText = "التخطيط المالي";
-        document.getElementById("service-financial-description").innerText = "نساعد الشركات في تطوير استراتيجيات مالية شاملة تتماشى مع أهدافها...";
+        document.getElementById("service-financial-description").innerText = "يعمل مستشارو الأعمال لدينا معك لتطوير الاستراتيجيات التي تقود النجاح على المدى الطويل. نقوم بتحليل اتجاهات السوق والمنافسة والعمليات الداخلية لضمان بقاء عملك تنافسيا وفعالا..";
         document.getElementById("service-business-strategy").innerText = "استراتيجية الأعمال";
-        document.getElementById("service-business-description").innerText = "نساعد الشركات على وضع استراتيجيات مالية شاملة تتوافق مع أهدافها. بدءًا من وضع الميزانيات ووصولًا إلى تخطيط الاستثمارات، نوفر لك الخبرة اللازمة للتعامل مع تعقيدات الشؤون المالية...";
+        document.getElementById("service-business-description").innerText = "نحن نساعدك على تحديد المخاطر المحتملة لعملك وتوفير استراتيجيات للتخفيف منها ، مما يضمن طول عمر عملياتك واستدامتها في الأوقات المضطربة";
         document.getElementById("service-risk-management").innerText = "إدارة المخاطر";
         document.getElementById("service-risk-description").innerText = "نساعد الشركات على وضع استراتيجيات مالية شاملة تتوافق مع أهدافها. بدءًا من وضع الميزانيات ووصولًا إلى تخطيط الاستثمارات، نوفر لك الخبرة اللازمة للتعامل مع تعقيدات الشؤون المالية...";
         document.getElementById("contact-heading").innerText = "اتصل بنا";
@@ -359,11 +312,9 @@
       isEnglish = !isEnglish;
     }
 
-
-
-  </script>
-
+</script>
 
 
 </body>
 </html>
+
